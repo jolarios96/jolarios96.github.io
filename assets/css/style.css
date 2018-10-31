@@ -1,0 +1,91 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/backgrounds/dust_scratches/dust_scratches/dust_scratches.png);
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+}
+
+/* header/footer styles*/
+.page-header {
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    background-color:#ffffff;
+    border-bottom: 3px solid #cccccc;
+}
+
+.header-container {
+    width: 960px;
+    margin: auto;
+}
+
+.header-name {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    width: 250px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    line-height: 90px;
+    margin: 0;
+    float: left;
+}
+
+.header-links {
+    float: right;
+    line-height: 90px;
+}
+
+.footer {
+    background-color: #666666;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    border-top: 10px solid #4aaaa5;
+}
+
+
+/* main content styles */
+.main-container {
+    background-color: white;
+    width: 960px;
+    height: auto;
+    margin: 40px auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+
+    word-wrap: break-word;
+}
+
+.content-header {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    border-bottom: 2px solid #dddddd;
+    margin-bottom: 17px;
+}
+
+.img {
+    width: 200px;
+    height: 150px;
+    float: left;
+    padding: 0 25px 0 1px;
+}
+
+.content-text {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
