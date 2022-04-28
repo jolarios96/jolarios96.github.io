@@ -1,0 +1,230 @@
+html {
+    min-width: 100%;
+    background-color: #019292;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #006567f8;
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 3.3rem;
+    z-index: 10;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+
+    font-size: 1.5rem;
+    padding: 11.6px 1rem 11.6px 1rem;
+}
+
+nav a:hover {
+    background-color: #003434;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+#welcome-section {
+    background-color: #009494;
+    height: 100vh;
+
+    background-image: linear-gradient(#006667 8%, #019292);
+}
+
+#landing {
+    width: 100%;
+}
+
+#welcome-section h1,
+#welcome-section p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 5rem;
+}
+
+#welcome-section p {
+    font-size: 2rem;
+}
+
+#work-section {
+    padding-top: 2rem;
+    background-color: #019292;
+}
+
+#work-section-header {
+    font-size: 4rem;
+    text-align: center;
+
+    margin: 6rem 0 5rem 0;
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: 28vw 28vw 28vw;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 2rem;
+}
+
+.project-card {
+    height: 300px;
+    box-shadow: 5px 5px #073a3a;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: scale(105%);
+}
+
+.project-card * {
+    transition: .4s ease all;
+}
+
+.project-img {
+    height: 100%;
+    min-width: 100%;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.project-card:hover .project-img {
+    transform: translateX(-50%) scale(105%);
+    opacity: 0%;
+}
+
+.project-info {
+    height: 100%;
+    min-width: 100%;
+    text-align: center;
+
+    background-color: #005A5A;
+    color: white;
+    opacity: 0%;
+
+    position: absolute;
+    top: 0;
+}
+
+.project-links {
+    width: 100%;
+}
+
+.project-links img {
+    width: 50%;
+}
+
+.project-card:hover .project-info {
+    opacity: 100%;
+}
+
+#contact-section {
+    /* height: 100vh; */
+    width: 100%;
+
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    position: relative;
+}
+
+#contact-section h2 {
+    font-size: 4rem;
+    text-align: center;
+
+    margin-top: 0;
+}
+
+#link-wrapper {
+    position: relative;
+
+    height: 200px;
+    width: 1024px;
+
+    margin: 0 auto;
+
+    background-color: #5ce4e4;
+
+    box-shadow: #073a3a 10px 7.5px;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.github-logo {
+    max-width: 300px;
+    padding-left: 50px;
+}
+
+.github-logo:hover {
+    transition: .4s;
+    transform: scale(110%);
+}
+
+.linkedin-logo {
+    width: 350px;
+}
+
+.linkedin-logo:hover {
+    transition: .4s;
+    transform: scale(110%);
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+
+    background-color: #005858f6;
+    box-shadow: #007272f6 0px -15px;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.vertical-center h3,
+.vertical-center h2,
+.vertical-center h1 {
+    margin-top: 0;
+}
+
+
+@media (max-width: 1024px) {
+    #link-wrapper {
+
+        height: 400px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .github-logo {
+        padding: 0;
+    }
+
+}
